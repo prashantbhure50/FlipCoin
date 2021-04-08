@@ -2,11 +2,9 @@
 
 head=0
 tail=0
-count=0
-while [ $count  -lt 10 ]
+while [ $head  -lt 21  -a $tail -lt 21 ]
 do
         number1=$(( RANDOM%2 ))
-	count=$(( count+1 ))
         if [ $number1  -eq 0 ]
         then
                 head=$(( head+1))
